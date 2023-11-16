@@ -1,0 +1,111 @@
+{
+    "display": "form",
+    "components": [
+      {
+        "label": "String veld",
+        "applyMaskOn": "change",
+        "tableView": true,
+        "key": "externBehandelen.stringVeld",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "NumberVeld",
+        "applyMaskOn": "change",
+        "mask": false,
+        "tableView": false,
+        "delimiter": false,
+        "requireDecimal": false,
+        "inputFormat": "plain",
+        "truncateMultipleSpaces": false,
+        "key": "externBehandelen.numberVeld",
+        "type": "number",
+        "input": true
+      },
+      {
+        "label": "Checkbox",
+        "tableView": false,
+        "defaultValue": false,
+        "key": "externBehandelen.checkbox",
+        "type": "checkbox",
+        "input": true
+      },
+      {
+        "label": "Data Grid",
+        "reorder": false,
+        "addAnotherPosition": "bottom",
+        "layoutFixed": false,
+        "enableRowGroups": false,
+        "initEmpty": false,
+        "tableView": false,
+        "defaultValue": [
+          {
+            "voornaam": "",
+            "achternaam": "",
+            "geboortedatum": "00/00/0000"
+          }
+        ],
+        "key": "externBehandelen.dataGrid",
+        "type": "datagrid",
+        "input": true,
+        "components": [
+          {
+            "label": "Voornaam",
+            "applyMaskOn": "change",
+            "tableView": true,
+            "key": "voornaam",
+            "type": "textfield",
+            "input": true
+          },
+          {
+            "label": "Achternaam",
+            "applyMaskOn": "change",
+            "tableView": true,
+            "key": "achternaam",
+            "type": "textfield",
+            "input": true
+          },
+          {
+            "label": "geboortedatum",
+            "format": "dd-MM-yyyy hh:mm a",
+            "tableView": false,
+            "datePicker": {
+              "disableWeekends": false,
+              "disableWeekdays": false
+            },
+            "enableMinDateInput": false,
+            "enableMaxDateInput": false,
+            "key": "geboortedatum",
+            "type": "datetime",
+            "input": true,
+            "widget": {
+              "type": "calendar",
+              "displayInTimezone": "viewer",
+              "locale": "en",
+              "useLocaleSettings": false,
+              "allowInput": true,
+              "mode": "single",
+              "enableTime": true,
+              "noCalendar": false,
+              "format": "dd-MM-yyyy hh:mm a",
+              "hourIncrement": 1,
+              "minuteIncrement": 1,
+              "time_24hr": false,
+              "minDate": null,
+              "disableWeekends": false,
+              "disableWeekdays": false,
+              "maxDate": null
+            }
+          }
+        ]
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }

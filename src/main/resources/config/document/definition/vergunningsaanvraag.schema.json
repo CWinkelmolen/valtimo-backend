@@ -40,6 +40,26 @@
                     "type": "boolean"
                 }
             }
+        },
+        "externBehandelen" : {
+            "type" : "object",
+            "properties": {
+                "stringVeld": {
+                    "type": "string"
+                },
+                "numberVeld": {
+                    "type":"number"
+                },
+                "checkbox":{
+                    "type":"boolean"
+                },
+                "dataGrid": {
+                    "type":"array"
+                }
+            }
+        },
+        "opmerking": {
+            "type": "string"
         }
     },
     "definitions": {
